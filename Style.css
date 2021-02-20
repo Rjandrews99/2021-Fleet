@@ -19,8 +19,8 @@ h1{
 /*Nav Bar Styles*/
 
 nav{
-    position: relative;
-    top:0;
+    position: sticky;
+    top:auto;
     z-index: 3;
     background: rgb(29,53,87);
     background: linear-gradient(90deg, rgba(29,53,87,1) 0%, rgba(67,105,158,0.9430147058823529) 100%);
@@ -32,6 +32,13 @@ nav{
     display: inline-flex;
     
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    
+}
+
 
 nav ul{
     list-style: none;
@@ -52,9 +59,6 @@ nav ul li:hover{
 .active{
     border-bottom: 5px solid #971b2f;
 }
-
-
-
 
 #logo:hover{
     filter: contrast(50%);
@@ -90,13 +94,16 @@ nav ul li:hover{
 .grid-container {
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px 0px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.7%;
+    gap: 0px 0px;
     grid-template-areas:
-      "quickAccess specifications slideShow1"
-      "quickAccess specifications slideShow2"
-      "quickAccess specifications slideShow3"
-      "quickAccess specifications slideShow4";
+      "quickAccess specifications specifications2"
+      "quickAccess specifications specifications2"
+      "quickAccess specifications specifications2"
+      "images images images"
+      "images images images"
+      "images images images"
+      "footer footer footer";
   }
 
 /* Quick access styles*/
@@ -148,8 +155,12 @@ nav ul li:hover{
 .specifications { 
     grid-area: specifications; 
     border-right: solid #971b2f 3px;
+    height: 1180px;
 }
 
+.specifications2{
+    height: 1180px;
+}
 .specstable th{
     padding: 10px 0;
     text-align: left;
@@ -161,67 +172,38 @@ nav ul li:hover{
     padding: 5px 0;
 }
 
-/*Slide Show Stylings*/
+/*Return to top button */
 
-.slideShow{
-    height: 400px;
-    width: 500px;
-    border: solid black 1px;
-    margin: auto;
-    position: relative;
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #971b2f; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 0.3s;
+  }
+  #myBtn:hover {
+    background-color: rgb(32,42,68); /* Add a dark-grey background on hover */
+  }
+
+
+.images{
+    grid-area: images;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border: solid black 5px;
 }
 
-
-.slideShow1 { 
-    grid-area: slideShow1; 
-   
-}
   
-.slideShow2 { 
-    grid-area: slideShow2; 
-    
-}
-  
-.slideShow3 { 
-    grid-area: slideShow3; 
-    
-}
-  
-.slideShow4 { 
-    grid-area: slideShow4; 
-    
-}
-
-.slideShow2 img{
-    width: 500px;
-    height: 400px;
-}
-.slideShow1 img{
-    width: 500px;
-    height: 400px;
-}
-
-
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color:rgb(32,42,68);
-    font-weight: bold;
-    font-size: 25px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
 
 
 
