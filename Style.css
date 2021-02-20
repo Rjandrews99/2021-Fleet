@@ -219,7 +219,7 @@ nav ul li:hover{
 
 /*Responsiveness*/
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 1242px){
     .quickAccess{
         visibility: hidden;
     }
@@ -250,7 +250,7 @@ nav ul li:hover{
     }
 
     nav ul{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
