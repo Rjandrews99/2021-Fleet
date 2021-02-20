@@ -19,7 +19,7 @@ h1{
 /*Nav Bar Styles*/
 
 nav{
-    position: sticky;
+    position: relative;
     top:0;
     z-index: 3;
     background: rgb(29,53,87);
@@ -52,6 +52,9 @@ nav ul li:hover{
 .active{
     border-bottom: 5px solid #971b2f;
 }
+
+
+
 
 #logo:hover{
     filter: contrast(50%);
@@ -160,45 +163,44 @@ nav ul li:hover{
 
 /*Slide Show Stylings*/
 
-.slideShow1 { 
-    grid-area: slideShow1; 
+.slideShow{
     height: 400px;
     width: 500px;
     border: solid black 1px;
+    margin: auto;
+    position: relative;
+}
+
+
+.slideShow1 { 
+    grid-area: slideShow1; 
+   
 }
   
 .slideShow2 { 
     grid-area: slideShow2; 
-    height: 400px;
-    width: 500px;
-    border: solid black 1px;
+    
 }
   
 .slideShow3 { 
     grid-area: slideShow3; 
-    height: 400px;
-    width: 500px;
-    border: solid black 1px;
+    
 }
   
 .slideShow4 { 
     grid-area: slideShow4; 
-    height: 400px;
+    
+}
+
+.slideShow2 img{
     width: 500px;
-    border: solid black 1px;
+    height: 400px;
+}
+.slideShow1 img{
+    width: 500px;
+    height: 400px;
 }
 
-/*Slide 1 styles*/
-
-.slideshow-container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
 
 .prev, .next{
     cursor: pointer;
@@ -213,6 +215,7 @@ nav ul li:hover{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .next{
@@ -220,70 +223,9 @@ nav ul li:hover{
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover .next:hover{
-  color: #971b2f;
-}
 
-.text{
-  color: rgb(32,42,68);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  font-family: inherit;
-}
-.numbertext {
-  color: rgb(32,42,68);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(32,42,68);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #971b2f;
-}
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/*Slidehsow 2*/
-
-.carousel-container{
-    position: relative;
-    width: 60%;
-    margin: auto;
-}
-
-.carousel-slide{
-    display: flex;
-    width: 100%;
-    height: 500px;
-}
