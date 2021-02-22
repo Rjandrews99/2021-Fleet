@@ -6,3 +6,7 @@ function mobileNav() {
       x.style.display = "block";
     }
   }
+
+  function hamburger(x) {
+    x.classList.toggle("change");
+  }
