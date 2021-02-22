@@ -7,6 +7,3 @@ function mobileNav() {
     }
   }
 
-  function hamburger(x) {
-    x.classList.toggle("change");
-  }
