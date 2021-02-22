@@ -16,30 +16,32 @@ h1{
     left: 20px;
 }
 /*Ham Icon*/
-
-.hamburgericon { 
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
+.nav-icon {
+    margin: 1em;
+    width: 40px;
+  }
+  
+  .nav-icon:after, 
+  .nav-icon:before, 
+  .nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
     height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+  }
+  .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
   }
   
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
   }
   
-.change .bar2 {opacity: 0;}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  .nav-icon:hover div {
+    transform: scale(0);
   }
 /*Nav Bar Styles*/
 
@@ -290,7 +292,7 @@ nav ul li:hover{
     .hamburger{
         display: flex;
         justify-content: center;
-        height: 50px;
+        height: 60px;
         background: rgb(29,53,87);
         background: linear-gradient(90deg, rgba(29,53,87,1) 0%, rgba(67,105,158,0.9430147058823529) 100%);
     }
