@@ -8,6 +8,8 @@
         <script src="https://kit.fontawesome.com/a58189be4b.js" crossorigin="anonymous"></script>
         <link href="./Resources/lightbox.min.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <header>
@@ -21,11 +23,11 @@
         </div>
         <nav>
             <ul id=mobileNav>
-                 <a href=""><img id="logo" src="./Resources/images/justgo-logo-white-red-CMYK.png"></a>
+                 <a href=""><img id="logo" src="./Resources/images/Logo/justgo-logo-white-red-CMYK.png"></a>
                  <a href="./2Berth.html"><li class="active">2 Berth</li></a>
-                 <a href=""><li>4 Berth</li></a>
-                 <a href=""><li>5 Berth</li></a>
-                 <a href=""><li>6 Berth</li></a>
+                 <a href="./4berth.html"><li>4 Berth</li></a>
+                 <a href="./5Berth.html"><li>5 Berth</li></a>
+                 <a href="./6Berth.html"><li>6 Berth</li></a>
             </ul>
             <script src="JS/mobileNav.js"></script>
         </nav>
@@ -49,7 +51,7 @@
                      </ul>
                 </div>
                 <div class="specifications">
-                    <table class="specstable">
+                    <table class="specstable" data-aos="zoom-out-up" data-aos-duration="1500">
                         <tbody>
                             <tr>
                                 <th>Model Info</th>
@@ -238,10 +240,10 @@
                     </table>
                 </div>
                 <div class="specifications2">
-                    <table class="specstable">
+                    <table class="specstable" data-aos="zoom-out-up" data-aos-duration="1500">
                         <tbody>
                             <tr>
-                                <th id="kitchen">Kitchen</th>
+                                <th id="kitchen" >Kitchen</th>
                             </tr>
                             <tr>
                                 <td>Make of fridge:</td>
@@ -401,26 +403,28 @@
                     </table>
                 </div>
                 <div id="images" class="images">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500">
                         <a href="Resources/images/Rainbow /bed1.jpg" data-lightbox="mygallery" data-title="Drop Down Bed"><img src="Resources/images/Rainbow /bed1.jpg" ></a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500">
                         <a href="./Resources/images/Rainbow /Dinnette1.jpg" data-lightbox="mygallery"><img src="./Resources/images/Rainbow /Dinnette1.jpg"></a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"> 
                         <a href="Resources/images/Rainbow /bed1.jpg" data-lightbox="mygallery"><img src="Resources/images/Rainbow /bed1.jpg"></a>
                     </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
+                    <div class="card" data-aos="zoom-out-up" data-aos-duration="1500"></div>
                     <script src="./JS/lightbox-plus-jquery.min.js"></script>
                 </div>
                 <div class="footer"></div>
             </div>
         </artcile>
-        
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
