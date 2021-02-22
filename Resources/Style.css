@@ -401,17 +401,3 @@ nav ul li:hover{
 }
 
 /*Footer*/
-footer {
-    height: 75px;
-    position: absolute;
-    width: 100%;
-    background-color: rgb(32,42,68);
-    margin-top: 50px;
-    
-}
-
-.footer{
-    position: absolute;
-    bottom: 0;
-    left: 0
-}
