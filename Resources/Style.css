@@ -16,10 +16,6 @@ h1{
     position: relative;
     left: 20px;
 }
-
-
-
-
 /*Ham Icon*/
 .nav-icon {
     margin: 1em;
@@ -67,7 +63,6 @@ nav{
 nav ul{
     list-style: none;
     display: inline-flex;
-    
 }
 
 nav ul li{
@@ -171,10 +166,7 @@ nav ul li:hover{
 /*Styles for the specs table*/
 
 .specifications { 
-    
     border-right: solid #971b2f 3px;
-    
-    
 }
 
 .specifications2{
@@ -216,9 +208,8 @@ nav ul li:hover{
   /* Image gallery styles */
 
 .images{
-    grid-area: images;
-    width: 95%;
-    margin: 100px auto;
+    width: 100%;
+    margin-top: 50px;
     display: inline-flex;
     flex-flow: row wrap;
     flex-direction: row;
@@ -233,7 +224,6 @@ nav ul li:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
-    
 }
 
 .card img{
@@ -244,20 +234,16 @@ nav ul li:hover{
 
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-    
 }
 
 
 /*Responsiveness for vehcile page*/
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 768px){
 
     .vechileHeader{
         font-size: 20px;
         height: 70px;
-    }
-    .images{
-        margin-top: 200px;
     }
     .card{
         width: 100%;
@@ -279,6 +265,10 @@ nav ul li:hover{
     .specifications,.specifications2{
         padding: 10px;
     }
+    .bannerText{
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -287,10 +277,6 @@ nav ul li:hover{
         flex-direction: column;
         
  }
-    
-
-
-
 
 /* Berth Pages*/
 
@@ -337,8 +323,10 @@ nav ul li:hover{
     margin: 0 auto;
 
 }
-.vechileCard span{
+.redText{
     color: #971b2f;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 .learnMore{
@@ -360,5 +348,61 @@ nav ul li:hover{
     background-color: rgb(32,42,68);
 }
 
+/*Landing Styles*/
 
+.banner{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    object-fit: scale-down;
+    top: -4px;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.bannerText{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.50);  
+    -webkit-backdrop-filter: blur(5px);
+    right: 5px;
+    top: -0;
+    max-width: 35%;
+    height: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.title{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+}
+
+.bannerText h2{
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+    font-size: 30px;
+}
+
+.bannerText span{
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.bannerText hr{
+    width: 80%;
+    border: solid #971b2f 1px;
+}
+
+.bannerBody {
+    padding: 10px 30px 0 30px;
+    font-weight: 200;
+    line-height: 28px;
+    font-size: 18px;
+}
