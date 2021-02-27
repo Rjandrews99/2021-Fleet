@@ -237,7 +237,7 @@ nav ul li:hover{
 }
 
 
-/*Responsiveness for vehcile page*/
+/*Responsiveness*/
 
 @media only screen and (max-width: 768px){
 
@@ -265,8 +265,10 @@ nav ul li:hover{
     .specifications,.specifications2{
         padding: 10px;
     }
+
     .bannerText{
-        width: 100%;
+        min-width: 100%;
+       
     }
 
 }
