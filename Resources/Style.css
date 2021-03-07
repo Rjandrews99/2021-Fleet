@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     color: rgb(32,42,68);
@@ -117,7 +118,8 @@ nav ul li:hover{
 .grid-container {
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: flex-start;
     width: 100%;
   }
 
@@ -126,13 +128,15 @@ nav ul li:hover{
     position: relative;
     float:left;
     top: -70px;
-    width: 175px;
+    width: 180px;
     height: 100%;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: #fcfcfc;
+    border: solid rgb(32,42,68) 3px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
+    margin: 10px;
 }
 .quickAccess:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -140,7 +144,7 @@ nav ul li:hover{
 
 .quickAccess h3{
     padding: 10px;
-    font-size: 20px;
+    font-size: 22px;;
 }
 
 .quickAccess ul{
@@ -148,6 +152,7 @@ nav ul li:hover{
     line-height: 40px;
     font-size: 18px;
 }
+
 
 /*Styling for the links changing color*/
 .quickAccess a::before{
@@ -167,6 +172,7 @@ nav ul li:hover{
 
 .specifications { 
     border-right: solid #971b2f 3px;
+    
 }
 
 .specifications2{
@@ -294,7 +300,7 @@ nav ul li:hover{
 .vechileCard{
     min-width:350px;
     max-width: 25%;
-    height: 350px;
+    height: 390px;
     margin-top: 20px;
     padding-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -369,7 +375,7 @@ nav ul li:hover{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.50);  
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px;)
+    backdrop-filter: blur(5px;);
     right: 5px;
     top: -0;
     max-width: 35%;
